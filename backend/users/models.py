@@ -12,7 +12,32 @@ class User(AbstractUser):
         max_length=255,
     )
     first_name = models.CharField(
+        null=True,
+        blank=True,
         max_length=256,
+    )
+    last_name = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True,
+    )
+    password = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True,
+    )
+    username = models.EmailField(
+        max_length=254,
+        null=True,
+        blank=True,
+    )
+    created = models.DateTimeField(
+        auto_now_add=True,
+        null=True,
+        blank=True,
+    )
+    modified = models.DateTimeField(
+        auto_now=True,
         null=True,
         blank=True,
     )

@@ -94,7 +94,7 @@ export default Blank = withStyles(_Blank, theme => ({
     backgroundColor: "#ffffff",
     fontFamily: "Roboto-Regular",
     flexDirection: "column",
-    flexWrap: "wrap",
+    flexWrap: "nowrap",
     justifyContent: "flex-start",
     alignItems: "stretch",
     alignContent: "stretch",

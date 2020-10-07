@@ -22,11 +22,21 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { TextInput_10: "" }
 
   render = () => (
     <View style={styles.View_1}>
-      <View style={styles.View_3} />
+      <View style={styles.View_3}>
+        <Icon iconFont="FontAwesome Icons" name="bars" style={styles.Icon_6} />
+        <TextInput
+          placeholder="Sample text input placeholder"
+          editable={true}
+          style={styles.TextInput_10}
+          value={this.state.TextInput_10}
+          onChangeText={nextValue => this.setState({ TextInput_10: nextValue })}
+        />
+        <Icon iconFont="FontAwesome Icons" name="star" style={styles.Icon_12} />
+      </View>
     </View>
   )
 }

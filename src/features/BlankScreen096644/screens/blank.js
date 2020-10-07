@@ -25,21 +25,8 @@ export class _Blank extends React.Component {
   state = {}
 
   render = () => (
-    <View style={this.props.themedStyle.View_1}>
-      <View style={this.props.themedStyle.View_3}>
-        <View style={this.props.themedStyle.View_5}>
-          <Icon
-            iconFont="Eva Design Icons"
-            name="menu"
-            height={20}
-            width={20}
-            style={this.props.themedStyle.Icon_7}
-          />
-          <Text style={this.props.themedStyle.Text_10}>
-            Sample text content
-          </Text>
-        </View>
-      </View>
+    <View style={styles.View_1}>
+      <View style={styles.View_3} />
     </View>
   )
 }
@@ -78,6 +65,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRadius: 0,
     backgroundSize: "auto"
   },
+
   View_3: {
     width: "100%",
     height: "100%",
@@ -108,6 +96,7 @@ export default Blank = withStyles(_Blank, theme => ({
     backgroundSize: "auto",
     alignSelf: "center"
   },
+
   View_5: {
     width: "100%",
     marginLeft: 0,
@@ -136,6 +125,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRadius: 0,
     backgroundSize: "auto"
   },
+
   Icon_7: {
     height: 100,
     marginLeft: 0,
@@ -167,6 +157,7 @@ export default Blank = withStyles(_Blank, theme => ({
     lineHeight: 12,
     letterSpacing: 0
   },
+
   Text_10: {
     marginLeft: 0,
     marginRight: 0,

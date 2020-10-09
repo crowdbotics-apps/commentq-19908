@@ -37,6 +37,7 @@ export class _Blank extends React.Component {
         />
         <Icon iconFont="FontAwesome Icons" style={styles.Icon_12} />
       </View>
+      <View style={styles.View_14} />
     </View>
   )
 }
